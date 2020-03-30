@@ -7,6 +7,7 @@ const withPrintMessage = (targetComponent) => {
 
     created () {
       console.log(`withPrintMessage created..`);
+      this.message = 'default message';
     },
     data () {
       return {
