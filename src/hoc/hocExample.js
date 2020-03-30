@@ -5,6 +5,9 @@ const withPrintMessage = (targetComponent) => {
     components: { targetComponent },
     template: '<target-component @click="printMessage" :message="message"/>',
 
+    created () {
+      console.log(`withPrintMessage created..`);
+    },
     data () {
       return {
         message: null
